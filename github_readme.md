@@ -53,8 +53,8 @@ lia_experiment_pipeline/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/lia-mechanism.git
-cd lia-mechanism
+git clone https://github.com/alqithami/LiA.git
+cd LiA
 ```
 
 2. Create a virtual environment and install dependencies:
@@ -162,19 +162,14 @@ If you use this code in your research, please cite our paper:
 ```bibtex
 @article{lia2025,
   title={Latency-Aware Resource Allocation over Heterogeneous Networks: A Lorentz-Invariant Market Mechanism with Interval-Graph Algorithms},
-  author={Author, A. and Author, B. and Author, C.},
-  journal={Telecommunication Systems},
+  author={Alqithami, S.},
+  journal={TBD: e.g., Telecommunication Systems},
   year={2025},
-  publisher={Springer}
+  publisher={TBD}
 }
 ```
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- This research was supported by [funding organization]
-- We thank [acknowledgments]
 
