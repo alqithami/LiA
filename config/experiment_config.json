@@ -1,0 +1,73 @@
+{
+    "general": {
+        "output_dir": "results",
+        "random_seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+        "instances_per_seed": 100,
+        "bootstrap_iterations": 10000
+    },
+    "mechanisms": {
+        "LIA": [0.1, 0.3, 0.5, 0.7, 0.9],
+        "VCG": [null],
+        "HoldBack": [null]
+    },
+    "topologies": {
+        "STARLINK-200": {
+            "num_bidders": 200,
+            "min_delay": 1.0,
+            "max_delay": 50.0,
+            "delay_unit": "ms",
+            "emission_time_range": [0, 100],
+            "propagation_delay_distribution": "uniform"
+        },
+        "INTERNET-100": {
+            "num_bidders": 100,
+            "min_delay": 0.1,
+            "max_delay": 300.0,
+            "delay_unit": "ms",
+            "emission_time_range": [0, 200],
+            "propagation_delay_distribution": "exponential"
+        },
+        "DSN-30": {
+            "num_bidders": 30,
+            "min_delay": 60000.0,
+            "max_delay": 2847000.0,
+            "delay_unit": "ms",
+            "emission_time_range": [0, 3600000],
+            "propagation_delay_distribution": "uniform"
+        }
+    },
+    "basic_experiments": {
+        "default_lambda": 0.5,
+        "clearing_horizon_factor": 1.5,
+        "valuation_distribution": "uniform"
+    },
+    "sensitivity_experiments": {
+        "lambda_values": [0.1, 0.3, 0.5, 0.7, 0.9],
+        "topology": "STARLINK-200"
+    },
+    "scalability_experiments": {
+        "bidder_counts": [10, 20, 30, 40, 50],
+        "topology_base": "STARLINK-200",
+        "instances_per_count": 50
+    },
+    "robustness_experiments": {
+        "error_levels": [0, 1, 5, 10, 20],
+        "error_unit": "ms",
+        "topology": "STARLINK-200",
+        "instances_per_error": 100
+    },
+    "lai_computation": {
+        "advance_ms": {
+            "STARLINK-200": 1.0,
+            "INTERNET-100": 1.0,
+            "DSN-30": 1000.0
+        }
+    },
+    "metrics": [
+        "efficiency_ratio",
+        "revenue_ratio",
+        "runtime",
+        "lai"
+    ]
+}
+

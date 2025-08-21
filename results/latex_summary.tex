@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\title{LIA Experiment Results}
+\author{Automated Experiment Pipeline}
+\date{August 21, 2025}
+\begin{document}
+\maketitle
+\section{Introduction}
+This document contains the results from the Lorentz-Invariant Auction (LIA) mechanism experiments. The experiments compare three auction mechanisms across three different network topologies.\n\n\section{Experimental Setup}
+The experiments were conducted across three network topologies:
+\begin{itemize}
+\item \textbf{STARLINK-200}: Satellite constellation with 200 nodes (delays: 1-50 ms)
+\item \textbf{INTERNET-100}: Internet backbone with 100 nodes (delays: 0.1-300 ms)
+\item \textbf{DSN-30}: Deep Space Network with 30 nodes (delays: 60-2847 seconds)
+\end{itemize}
+Three auction mechanisms were compared:
+\begin{itemize}
+\item \textbf{LIA}: Lorentz-Invariant Auction (novel mechanism)
+\item \textbf{VCG}: Vickrey-Clarke-Groves (baseline)
+\item \textbf{HoldBack}: HoldBack mechanism (delay-aware baseline)
+\end{itemize}
+\section{Results}
+\input{results/tables/summary_table.tex}
+\section{Conclusion}
+The results demonstrate the performance characteristics of the LIA mechanism compared to traditional auction mechanisms in heterogeneous network environments.
+\end{document}
