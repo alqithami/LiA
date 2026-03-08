@@ -163,8 +163,8 @@ If you use this code in your research, please cite our paper:
 @article{lia2025,
   title={Latency-Aware Resource Allocation over Heterogeneous Networks: A Lorentz-Invariant Market Mechanism with Interval-Graph Algorithms},
   author={Alqithami, S.},
-  journal={TBD: e.g., Telecommunication Systems},
-  year={2025},
+  journal={TBD -- e.g., Telecommunication Systems},
+  year={2026},
   publisher={TBD}
 }
 ```
