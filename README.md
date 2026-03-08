@@ -6,6 +6,7 @@
 This repository contains the implementation and experimental framework for the **Lorentz-Invariant Auction (LIA)** mechanism described in the paper:
 
 > **Latency-Aware Resource Allocation over Heterogeneous Networks: A Lorentz-Invariant Market Mechanism with Interval-Graph Algorithms**
+<img width="3170" height="1347" alt="lia_banner_v1" src="https://github.com/user-attachments/assets/107a38d7-47bd-47be-bbbc-e7f9cad02a25" />
 
 ## Overview
 
