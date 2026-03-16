@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccccc}
+\toprule
+Mechanism & SW/OPT & Rev/OPT & Latency (ms) & Eff. welfare & Runtime (ms) & LAI \\
+\midrule
+HoldBack & 1.000 & 0.999 & 16.28 & 997.31 & 0.056 & 0.000 \\
+LIA_lambda0.25_per_s & 1.000 & 0.999 & 16.41 & 997.14 & 0.183 & 0.000 \\
+LIA_lambda0.5_per_s & 1.000 & 0.998 & 16.41 & 996.85 & 0.183 & 0.000 \\
+LIA_lambda1_per_s & 0.999 & 0.997 & 16.41 & 996.49 & 0.182 & 0.000 \\
+LIA_lambda2_per_s & 0.999 & 0.996 & 16.41 & 995.90 & 0.183 & 0.000 \\
+SyncVCG & 1.000 & 0.999 & 16.31 & 997.30 & 0.085 & 0.000 \\
+\bottomrule
+\end{tabular}
+\caption{Summary metrics for INTERNET-100 ($\epsilon$=0\,ms).}
+\label{tab:internet100_eps0p0}
+\end{table}
