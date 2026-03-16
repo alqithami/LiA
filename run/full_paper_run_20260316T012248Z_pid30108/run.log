@@ -1,0 +1,29 @@
+2026-03-16 04:22:48 | INFO | lia | Run directory: runs/full_paper_run_20260316T012248Z_pid30108
+2026-03-16 04:22:48 | INFO | lia | Pipeline version: 4.1.0
+2026-03-16 04:22:48 | INFO | lia | lia import: /Users/alqithami/Desktop/2026/March/LiA/LIA_final_code_local/src/lia/__init__.py
+2026-03-16 04:22:48 | INFO | lia | Config: config/full.json
+2026-03-16 04:22:48 | INFO | lia | Loading cached topology STARLINK-200 <- data/topologies/STARLINK-200.json
+2026-03-16 04:22:48 | INFO | lia | Loading cached topology INTERNET-100 <- data/topologies/INTERNET-100.json
+2026-03-16 04:22:48 | INFO | lia | Loading cached topology DSN-30 <- data/topologies/DSN-30.json
+2026-03-16 04:22:48 | INFO | lia | Topology hash STARLINK-200: ad02165ea8673ce33972bc0460ba48dd19675c9d2c7e4250cf8e07c695126f54
+2026-03-16 04:22:48 | INFO | lia | Topology hash INTERNET-100: b88acfd09eac7297eed95e542f900ce8ec18a6fc7a7f391f8fd5b46e5803f8df
+2026-03-16 04:22:48 | INFO | lia | Topology hash DSN-30: dc991269636c462e99c5cf2a30ba0ebe18798ec2ad585d08f5e4a85c825f3463
+2026-03-16 04:22:48 | INFO | lia | === Measurement error eps_ms=0 (model=iid_uniform, common_fraction=0) ===
+2026-03-16 04:22:48 | INFO | lia | Generating instances: topo=STARLINK-200, n=10, m=3500, seed=1259523148
+2026-03-16 04:22:48 | INFO | lia | Generating instances: topo=STARLINK-200, n=20, m=3500, seed=2685321445
+2026-03-16 04:22:49 | INFO | lia | Generating instances: topo=STARLINK-200, n=30, m=3500, seed=2733184750
+2026-03-16 04:22:50 | INFO | lia | Generating instances: topo=STARLINK-200, n=40, m=3500, seed=211066676
+2026-03-16 04:22:52 | INFO | lia | Generating instances: topo=STARLINK-200, n=50, m=3500, seed=614973720
+2026-03-16 04:22:53 | INFO | lia | Generating instances: topo=INTERNET-100, n=10, m=3500, seed=1522118689
+2026-03-16 04:22:54 | INFO | lia | Generating instances: topo=INTERNET-100, n=20, m=3500, seed=3745076973
+2026-03-16 04:22:54 | INFO | lia | Generating instances: topo=INTERNET-100, n=30, m=3500, seed=788049592
+2026-03-16 04:22:56 | INFO | lia | Generating instances: topo=INTERNET-100, n=40, m=3500, seed=2304058432
+2026-03-16 04:22:57 | INFO | lia | Generating instances: topo=INTERNET-100, n=50, m=3500, seed=1762042616
+2026-03-16 04:22:58 | INFO | lia | Generating instances: topo=DSN-30, n=10, m=3500, seed=1439854164
+2026-03-16 04:22:59 | INFO | lia | Generating instances: topo=DSN-30, n=20, m=3500, seed=1445198986
+2026-03-16 04:23:00 | INFO | lia | Generating instances: topo=DSN-30, n=30, m=3500, seed=3115394514
+2026-03-16 04:23:01 | INFO | lia | Generating instances: topo=DSN-30, n=40, m=3500, seed=3306289014
+2026-03-16 04:23:02 | INFO | lia | Generating instances: topo=DSN-30, n=50, m=3500, seed=1973133896
+2026-03-16 04:23:09 | INFO | lia | === Estimating LAI (expectation-first; then supremum over delta-grid) ===
+2026-03-16 04:39:21 | INFO | lia | Saved paired bootstrap differences to paired_differences.csv
+2026-03-16 04:39:21 | INFO | lia | Done

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccccc}
+\toprule
+Mechanism & SW/OPT & Rev/OPT & Latency (ms) & Eff. welfare & Runtime (ms) & LAI \\
+\midrule
+BatchVCG_B10ms & 0.972 & 0.897 & 13.77 & 929.24 & 0.002 & 12.547 \\
+BatchVCG_B1ms & 0.601 & 0.157 & 5.09 & 575.56 & 0.001 & 235.835 \\
+BatchVCG_B20ms & 0.998 & 0.950 & 16.06 & 953.58 & 0.003 & 0.161 \\
+BatchVCG_B50ms & 0.998 & 0.950 & 16.06 & 953.58 & 0.003 & 0.165 \\
+BatchVCG_B5ms & 0.842 & 0.637 & 9.09 & 805.96 & 0.002 & 94.365 \\
+FastVCG & 0.523 & 0.000 & 4.09 & 500.09 & 0.001 & 255.833 \\
+HoldBack & 0.998 & 0.950 & 16.06 & 953.58 & 0.002 & 0.168 \\
+LIA_lambda0.5_per_s & 0.998 & 0.950 & 15.88 & 953.56 & 0.006 & 0.060 \\
+LIA_lambda1_per_s & 0.997 & 0.950 & 15.88 & 953.46 & 0.006 & 0.000 \\
+LIA_lambda2_per_s & 0.997 & 0.949 & 15.88 & 953.14 & 0.006 & 0.000 \\
+SyncVCG & 0.998 & 0.950 & 16.06 & 953.58 & 0.002 & 0.133 \\
+\bottomrule
+\end{tabular}
+\caption{Summary metrics for INTERNET-100 ($\epsilon$=0\,ms).}
+\label{tab:internet100_eps0p0}
+\end{table}
