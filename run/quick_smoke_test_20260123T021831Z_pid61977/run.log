@@ -1,0 +1,20 @@
+2026-01-23 05:18:31 | INFO | lia | Run directory: runs/quick_smoke_test_20260123T021831Z_pid61977
+2026-01-23 05:18:31 | INFO | lia | Pipeline version: 4.0.2
+2026-01-23 05:18:31 | INFO | lia | lia import: /Users/alqithami/Library/CloudStorage/GoogleDrive-alqithami@gmail.com/My Drive/BU/Funding/2026/Jan/LiA/J23/lia_experiment_pipeline_fixed_v4_2/src/lia/__init__.py
+2026-01-23 05:18:31 | INFO | lia | Config: config/quick.json
+2026-01-23 05:18:31 | INFO | lia | Loading cached topology STARLINK-200 <- data/topologies/STARLINK-200.json
+2026-01-23 05:18:31 | INFO | lia | Loading cached topology INTERNET-100 <- data/topologies/INTERNET-100.json
+2026-01-23 05:18:31 | INFO | lia | Loading cached topology DSN-30 <- data/topologies/DSN-30.json
+2026-01-23 05:18:31 | INFO | lia | Topology hash STARLINK-200: ad02165ea8673ce33972bc0460ba48dd19675c9d2c7e4250cf8e07c695126f54
+2026-01-23 05:18:31 | INFO | lia | Topology hash INTERNET-100: b88acfd09eac7297eed95e542f900ce8ec18a6fc7a7f391f8fd5b46e5803f8df
+2026-01-23 05:18:31 | INFO | lia | Topology hash DSN-30: dc991269636c462e99c5cf2a30ba0ebe18798ec2ad585d08f5e4a85c825f3463
+2026-01-23 05:18:31 | INFO | lia | === Measurement error eps_ms=0 (model=iid_uniform, common_fraction=0) ===
+2026-01-23 05:18:31 | INFO | lia | Generating instances: topo=STARLINK-200, n=10, m=30, seed=1259523148
+2026-01-23 05:18:31 | INFO | lia | Generating instances: topo=STARLINK-200, n=20, m=30, seed=2685321445
+2026-01-23 05:18:31 | INFO | lia | Generating instances: topo=INTERNET-100, n=10, m=30, seed=1522118689
+2026-01-23 05:18:31 | INFO | lia | Generating instances: topo=INTERNET-100, n=20, m=30, seed=3745076973
+2026-01-23 05:18:31 | INFO | lia | Generating instances: topo=DSN-30, n=10, m=30, seed=1439854164
+2026-01-23 05:18:31 | INFO | lia | Generating instances: topo=DSN-30, n=20, m=30, seed=1445198986
+2026-01-23 05:18:31 | INFO | lia | === Estimating LAI (expectation-first; then supremum over delta-grid) ===
+2026-01-23 05:18:31 | INFO | lia | Saved paired bootstrap differences to paired_differences.csv
+2026-01-23 05:18:31 | INFO | lia | Done
