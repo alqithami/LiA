@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccccc}
+\toprule
+Mechanism & SW/OPT & Rev/OPT & Latency (ms) & Eff. welfare & Runtime (ms) & LAI \\
+\midrule
+BatchVCG_B0.5ms & 0.507 & 0.000 & 21466.15 & 224.13 & 0.012 & 0.000 \\
+BatchVCG_B10ms & 0.507 & 0.000 & 21475.65 & 224.02 & 0.012 & 0.000 \\
+BatchVCG_B1ms & 0.507 & 0.000 & 21466.65 & 224.12 & 0.012 & 0.000 \\
+BatchVCG_B2ms & 0.507 & 0.000 & 21467.65 & 224.10 & 0.012 & 0.000 \\
+BatchVCG_B5ms & 0.507 & 0.000 & 21470.65 & 224.10 & 0.012 & 0.000 \\
+FastVCG & 0.507 & 0.000 & 21465.65 & 224.15 & 0.012 & 0.000 \\
+HoldBack & 0.999 & 0.991 & 1195263.79 & 0.00 & 0.021 & 0.000 \\
+LIA_lambda0.25_per_s & 0.979 & 0.951 & 1195263.54 & 0.00 & 0.069 & 0.000 \\
+LIA_lambda0.5_per_s & 0.978 & 0.950 & 1195263.54 & 0.00 & 0.068 & 0.000 \\
+LIA_lambda1_per_s & 0.978 & 0.949 & 1195263.54 & 0.00 & 0.068 & 0.000 \\
+LIA_lambda2_per_s & 0.977 & 0.946 & 1195263.54 & 0.00 & 0.068 & 0.000 \\
+SyncVCG & 0.999 & 0.991 & 1195263.80 & 0.00 & 0.029 & 0.000 \\
+\bottomrule
+\end{tabular}
+\caption{Summary metrics for DSN-30 ($\epsilon$=0\,ms).}
+\label{tab:dsn30_eps0p0}
+\end{table}

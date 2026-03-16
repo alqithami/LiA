@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lcccccc}
+\toprule
+Mechanism & SW/OPT & Rev/OPT & Latency (ms) & Eff. welfare & Runtime (ms) & LAI \\
+\midrule
+BatchVCG_B0.5ms & 0.523 & 0.038 & 12.99 & 518.21 & 0.012 & 10.987 \\
+BatchVCG_B10ms & 0.804 & 0.596 & 22.49 & 796.30 & 0.012 & 5.136 \\
+BatchVCG_B1ms & 0.541 & 0.075 & 13.49 & 536.48 & 0.012 & 10.876 \\
+BatchVCG_B2ms & 0.576 & 0.146 & 14.49 & 570.81 & 0.012 & 9.499 \\
+BatchVCG_B5ms & 0.673 & 0.343 & 17.49 & 666.98 & 0.012 & 8.065 \\
+FastVCG & 0.505 & 0.000 & 12.49 & 500.30 & 0.012 & 9.987 \\
+HoldBack & 1.000 & 0.991 & 69.40 & 985.18 & 0.021 & 0.000 \\
+LIA_lambda0.25_per_s & 0.999 & 0.991 & 69.37 & 984.74 & 0.069 & 0.000 \\
+LIA_lambda0.5_per_s & 0.998 & 0.989 & 69.37 & 984.09 & 0.069 & 0.000 \\
+LIA_lambda1_per_s & 0.997 & 0.987 & 69.37 & 982.86 & 0.068 & 0.000 \\
+LIA_lambda2_per_s & 0.995 & 0.983 & 69.37 & 980.67 & 0.068 & 0.000 \\
+SyncVCG & 1.000 & 0.991 & 69.40 & 985.18 & 0.027 & 0.000 \\
+\bottomrule
+\end{tabular}
+\caption{Summary metrics for STARLINK-200 ($\epsilon$=0\,ms).}
+\label{tab:starlink200_eps0p0}
+\end{table}
