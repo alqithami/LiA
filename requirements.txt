@@ -1,7 +1,19 @@
-numpy>=1.21.0
-pandas>=1.3.0
-matplotlib>=3.4.2
-seaborn>=0.11.1
-scipy>=1.7.0
-networkx>=2.6.3
+# Core scientific stack
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
 
+# Progress + utilities
+tqdm>=4.66
+
+# Graph parsing/building
+networkx>=3.2
+lxml>=5.0
+
+# Real-data topology builders
+sgp4>=2.23
+skyfield>=1.46
+
+# Optional (used for faster percentiles / stats, but not strictly required)
+scipy>=1.10
+requests>=2.31

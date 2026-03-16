@@ -1,0 +1,77 @@
+{
+  "run_name": "table3_replication",
+  "random_seed": 123,
+  "topologies": [
+    {
+      "name": "STARLINK-200"
+    },
+    {
+      "name": "INTERNET-100"
+    },
+    {
+      "name": "DSN-30"
+    }
+  ],
+  "bidder_counts": [
+    1000
+  ],
+  "instances_per_setting": 1000,
+  "value_distribution": {
+    "type": "uniform",
+    "low": 0,
+    "high": 1000
+  },
+  "horizon_policy": {
+    "type": "pctl_of_shortest_path",
+    "percentile": 0.95,
+    "extra_ms": 0.0
+  },
+  "measurement_error": {
+    "eps_grid_ms": [
+      0.0
+    ]
+  },
+  "mechanisms": {
+    "sync_vcg": {},
+    "holdback": {},
+    "lia": {
+      "lambda_grid": [
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "lambda_unit": "per_s",
+      "use_estimated_slack": true,
+      "clamp_estimated_slack": true
+    }
+  },
+  "lai": {
+    "enabled": true,
+    "delta_grid_ms": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "sample_bidders_per_instance": 5,
+    "max_instances_per_group": 1000,
+    "bootstrap_resamples": 10000
+  },
+  "metrics": {
+    "discount_rate_r_per_ms": 0.0001
+  },
+  "bootstrap": {
+    "enabled": true,
+    "n_resamples": 10000
+  },
+  "output": {
+    "runs_dir": "runs"
+  },
+  "datasets": {
+    "strict": true,
+    "rebuild_topologies": false
+  }
+}

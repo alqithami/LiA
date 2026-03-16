@@ -1,0 +1,53 @@
+{
+  "run_name": "robustness_sweep_subnetwork",
+  "random_seed": 123,
+  "topologies": [
+    {"name": "STARLINK-200"},
+    {"name": "INTERNET-100"},
+    {"name": "DSN-30"}
+  ],
+  "bidder_counts": [10, 20, 30, 40, 50],
+  "instances_per_setting": 1000,
+  "value_distribution": {
+    "type": "uniform",
+    "low": 0,
+    "high": 1000
+  },
+  "horizon_policy": {
+    "type": "pctl_of_shortest_path",
+    "percentile": 0.95,
+    "extra_ms": 0.0
+  },
+  "measurement_error": {
+    "eps_grid_ms": [0.0, 0.5, 1.0, 2.0, 5.0, 10.0],
+    "model": "subnetwork_correlated_uniform"
+  },
+  "mechanisms": {
+    "sync_vcg": {},
+    "fast_vcg": {},
+    "batch_vcg": {"batch_ms_grid": [1.0, 5.0, 10.0, 20.0, 50.0]},
+    "holdback": {},
+    "lia": {
+      "lambda_grid": [1.0],
+      "lambda_unit": "per_s"
+    }
+  },
+  "lai": {
+    "enabled": true,
+    "delta_grid_ms": [1.0, 2.0, 5.0, 10.0, 20.0, 50.0, 100.0],
+    "report_g_1ms": true,
+    "sample_bidders_per_instance": 5,
+    "bootstrap_resamples": 5000
+  },
+  "metrics": {"discount_rate_r_per_ms": 0.0001},
+  "bootstrap": {
+    "enabled": true,
+    "n_resamples": 5000,
+    "chunk_size": 200
+  },
+  "output": {"runs_dir": "runs"},
+  "datasets": {
+    "strict": true,
+    "rebuild_topologies": false
+  }
+}

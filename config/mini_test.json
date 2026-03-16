@@ -1,0 +1,22 @@
+{
+  "run_name": "mini_test",
+  "random_seed": 123,
+  "topologies": [{"name": "INTERNET-100"}],
+  "bidder_counts": [5],
+  "instances_per_setting": 3,
+  "value_distribution": {"type": "uniform", "low": 0, "high": 1000},
+  "horizon_policy": {"type": "pctl_of_shortest_path", "percentile": 0.95, "extra_ms": 0.0},
+  "measurement_error": {"eps_grid_ms": [0.0, 1.0], "model": "distance_biased_uniform"},
+  "mechanisms": {
+    "sync_vcg": {},
+    "fast_vcg": {},
+    "batch_vcg": {"batch_ms_grid": [5.0]},
+    "holdback": {},
+    "lia": {"lambda_grid": [1.0], "lambda_unit": "per_s"}
+  },
+  "lai": {"enabled": false},
+  "metrics": {"discount_rate_r_per_ms": 0.0001},
+  "bootstrap": {"enabled": false},
+  "output": {"runs_dir": "runs"},
+  "datasets": {"strict": true, "rebuild_topologies": false}
+}

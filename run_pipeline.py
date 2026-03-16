@@ -1,39 +1,28 @@
-#!/usr/bin/env python3
-import os, json
-from src.experiment import ExperimentRunner
+#!/usr/bin/env python
+from __future__ import annotations
 
-def main():
-    here = os.path.dirname(__file__)
-    cfg_path = os.path.join(here, 'config', 'experiment_config.json')
-    with open(cfg_path, 'r') as f:
-        cfg = json.load(f)
+"""Entry-point for running the LiA experiment pipeline.
 
-    runner = ExperimentRunner(cfg)
+This repository uses a `src/` layout. To prevent accidentally importing an older *installed*
+`lia` package (e.g., from a previous pipeline version), we explicitly prepend the local
+`src/` directory to `sys.path`.
 
-    # Run the three batches described in your config
-    df_basic = runner.run_basic_experiments()
-    df_sens  = runner.run_sensitivity_experiments()
-    df_scal  = runner.run_scalability_experiments()
+If you see results that don't match the current code, first check the banner printed by
+this script (it shows the pipeline version and root path).
+"""
 
-    # Create basic summaries
-    figs_dir = os.path.join(cfg['general']['output_dir'], 'figures')
-    os.makedirs(figs_dir, exist_ok=True)
+import sys
+from pathlib import Path
 
-    # Save basic summaries for each topology
-    for topo in df_basic['topology_name'].unique():
-        topo_data = df_basic[df_basic['topology_name']==topo]
-        summary = topo_data.groupby('mechanism').agg({
-            'efficiency_ratio': ['mean', 'std'],
-            'revenue': ['mean', 'std'],
-            'runtime': ['mean', 'std']
-        }).round(4)
-        
-        with open(os.path.join(figs_dir, f'summary_{topo}.txt'), 'w') as f:
-            f.write(f'Experiment Summary for {topo}\n')
-            f.write('=' * 40 + '\n\n')
-            f.write(str(summary))
+ROOT = Path(__file__).resolve().parent
+SRC = ROOT / "src"
+if SRC.exists():
+    sys.path.insert(0, str(SRC))
 
-    print('All done. Results saved under', cfg['general']['output_dir'])
+from lia import __version__ as lia_version  # noqa: E402
+from lia.experiment.runner import main  # noqa: E402
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
+    print(f"[LiA Pipeline] version={lia_version} root={ROOT}")
     main()
