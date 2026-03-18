@@ -4,6 +4,8 @@ This repository contains the reference implementation and experiment pipeline fo
 
 > **Latency-Aware Resource Allocation over Heterogeneous Networks: A Lorentz-Invariant Market Mechanism**
 
+<img width="3169" height="1347" alt="lia_banner" src="https://github.com/user-attachments/assets/194dde21-42cb-4716-b9c1-c52f86f86df9" />
+
 LIA is a latency-aware auction framework for heterogeneous communication settings in which bidders face materially different propagation delays, including LEO satellite systems, terrestrial backbone networks, and deep-space relay networks. The codebase supports reproducible topology construction, instance generation, mechanism evaluation, summary statistics, and paper-ready figures and tables.
 
 ## Repository status
