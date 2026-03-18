@@ -19,7 +19,6 @@ The canonical, maintained pipeline is:
 - `scripts/*.py`
 - `src/lia/`
 
-If older or archival files remain elsewhere in the repository while the project is being consolidated, the entry points and commands in this README take precedence.
 
 ## What this repository provides
 
