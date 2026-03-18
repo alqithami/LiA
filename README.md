@@ -1,4 +1,6 @@
 # LiA: Lorentz-Invariant Auction Experiment Pipeline
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
 This repository contains the reference implementation and experiment pipeline for the Lorentz-Invariant Auction (LIA) mechanism studied in the manuscript:
 
@@ -274,8 +276,6 @@ If you use this repository, please cite the accompanying manuscript. If final pu
 }
 ```
 
-Replace this with the final journal or conference citation once publication details are available.
-
 ## License
 
-Add a top-level `LICENSE` file and keep this section consistent with that file. If you intend to release the code under MIT, include the standard MIT license text in `LICENSE` before making the repository public as the archival artifact.
+This repository is released under the **MIT License**. See `LICENSE`.
